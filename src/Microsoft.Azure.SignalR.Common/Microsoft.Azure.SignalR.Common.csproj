@@ -20,6 +20,16 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="$(MicrosoftAspNetCoreSignalRPackageVersion)" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Common\Azure.Core\AppContextSwitchHelper.cs" LinkBase="SharedSource/Azure.Core" />
+    <Compile Include="..\Common\Azure.Core\Argument.cs" LinkBase="SharedSource/Azure.Core" />
+    <Compile Include="..\Common\Azure.Core\DiagnosticScope.cs" LinkBase="SharedSource/Azure.Core" />
+    <Compile Include="..\Common\Azure.Core\DiagnosticScopeFactory.cs" LinkBase="SharedSource/Azure.Core" />
+    <Compile Include="..\Common\Azure.Core\MessagingClientDiagnostics.cs" LinkBase="SharedSource/Azure.Core" />
+    <Compile Include="..\Common\Azure.Core\MessagingDiagnosticOperation.cs" LinkBase="SharedSource/Azure.Core" />
+    <Compile Include="..\Common\Azure.Core\TrimmingAttribute.cs" LinkBase="SharedSource/Azure.Core" />
+  </ItemGroup>
 	
   <!-- New packages should be added to Directory.Build.props! -->
 </Project>

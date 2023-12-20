@@ -29,6 +29,7 @@
     <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="$(MicrosoftRestClientRuntimePackageVersion)" />
     <PackageReference Include="Azure.Identity" Version="$(AzureIdentityPackageVersion)" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="$(SystemIdentityModelTokensJwtPackageVersion)" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource " Version="$(SystemDiagnosticsDiagnosticsSourcePackageVersion)" />
     <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
   </ItemGroup>
 
